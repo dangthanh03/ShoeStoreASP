@@ -1,0 +1,20 @@
+﻿@model ShoeStoreASP.Models.Domain.Brand
+
+
+    <h2>Edit Brand</h2>
+
+    <form class="w-50 mx-auto mt-5 Contentt float-in" asp-action="EditBrand" method="post">
+        <input type="hidden" asp-for="BrandId" />
+
+        <div class="mb-3">
+            <label class="form-label" asp-for="BrandName">Brand Name:</label>
+            <input class="form-control"  asp-for="BrandName" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" asp-for="Description">Description:</label>
+            <input class="form-control" asp-for="Description" />
+        </div>
+
+        <button class="btn btn-primary" type="submit">Save Changes</button>
+    </form>

@@ -1,0 +1,123 @@
+﻿﻿using Microsoft.AspNetCore.Mvc.Rendering;
+@{
+    string name = User.Identity.Name;
+
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe store</title>
+   <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    @RenderSection("Scripts", required: false)
+</head>
+
+<body>
+
+    <div class="nav-barr">
+        <div class="logo">
+            movie store
+        </div>
+        <ul class="nav-linkk">
+            <li><a href="/Home/Index">Home</a></li>
+            @if (User.IsInRole("Admin"))
+            {
+                <li class="dropdown-submenu">
+                    <a href="#">Admin <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-nav-linkk">
+                        <li class="dropdown-submenu1">
+                            <a href="#">Brand</a>
+                            <ul class="dropdown-submenu-nav1">
+                                <li><a href="/Brand/AddBrand">Add</a></li>
+
+                                <li><a href="/Brand/GetAllBrands">List</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu2">
+                            <a href="#">Shoes</a>
+                            <ul class="dropdown-submenu-nav2">
+                                <li><a href="/Shoe/AddShoe">Add</a></li>
+                                <li><a href="/Shoe/GetAllShoes">List</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu3">
+                            <a href="#">Types</a>
+                            <ul class="dropdown-submenu-nav3">
+                                <li><a href="/Type/AddType">Add</a></li>
+                                <li><a href="/Type/GetAllType">List</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+            }
+
+            @if (string.IsNullOrEmpty(name))
+            {
+                <li><a href="/UserAuthenticate/Login">Login</a></li>
+                <li><a href="/UserAuthenticate/Register">Register</a></li>
+            }
+            else
+            {
+                <li class="dropdown-submenu">
+                    <a href="#">@name <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-nav-linkk">
+                        <li><a href="/UserAuthenticate/ChangePass">Change password</a></li>
+                        <li><a href="/Cart/AddToCart">Cart</a></li>
+                        <li><a href="/Invoice/GetAllInvoice">Invoices</a></li>
+                      
+                    </ul>
+                <li><a href="/UserAuthenticate/Logout">Logout</a></li>
+                </li> 
+            }
+        </ul>
+    </div>
+    <div class="row Section">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </div>
+    <footer class="footerr row ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>Shoe Store is your go-to platform for discovering and purchasing a wide range of shoes.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@shoestore.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <p>Stay connected on social media:</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" target="_blank">Facebook</a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank">Twitter</a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2024 Movie Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

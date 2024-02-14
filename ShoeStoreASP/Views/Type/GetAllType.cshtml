@@ -1,0 +1,56 @@
+﻿@model ShoeStoreASP.Models.ViewModel.TypeListVm
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Brands</title>
+    <script>
+        function confirmDelete(id) {
+            var result = confirm("Are you sure you want to delete this brand?");
+            if (result) {
+                var form = document.createElement("form");
+                form.method = "post";
+                form.action = "/Type/DeleteTypeConfirmed?id=" + id;
+
+
+                document.body.appendChild(form);
+                form.submit();
+            }
+        }
+    </script>
+</head>
+<Section>
+    <div class="tbl-container">
+    <h2>List of Brands</h2>
+
+
+    @if (Model != null && Model.Types!= null && Model.Types.Any())
+    {
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var type in Model.Types)
+                {
+                    <tr>
+                        <td>@type.TypeName</td>
+                        <td>
+                            <a class="btn btn-primary" href="@Url.Action("EditType", "Type", new { id = type.TypeId })">Edit</a> |
+                                <a class ="btn btn-danger" href="javascript:void(0);" onclick="confirmDelete(@type.TypeId)">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No brands available.</p>
+    }
+    </div>
+</Section>
+</html>

@@ -1,0 +1,32 @@
+﻿@model ShoeStoreASP.Models.Domain.Type
+
+@{
+
+}
+
+<form class="w-50 mx-auto mt-5 Contentt float-in" asp-action="AddType" method="post" asp-controller="Type" enctype="multipart/form-data">
+    <h2 class="pb-3">Add Type</h2>
+    <div class="mb-3">
+        <label asp-for="TypeName" class="form-label">Type Name</label>
+        <input type="text" class="form-control" asp-for="TypeName">
+        <span asp-validation-for="TypeName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label">Description</label>
+        <input type="text" class="form-control" asp-for="Description">
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert alert-success mb-3">
+            @TempData["msg"]
+        </div>
+    }
+
+    <div class="mb-3">
+        <button class="btn btn-primary" type="submit">Add</button>
+        <a class="btn btn-secondary" href="/Type/GetAllType">All Records</a>
+    </div>
+</form>

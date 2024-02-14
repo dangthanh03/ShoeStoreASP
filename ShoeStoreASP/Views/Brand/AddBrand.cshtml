@@ -1,0 +1,32 @@
+﻿@model ShoeStoreASP.Models.Domain.Brand
+
+@{
+
+}
+
+<form class="w-50 mx-auto mt-5 Contentt float-in" asp-action="AddBrand" method="post" asp-controller="Brand" enctype="multipart/form-data">
+    <h2 class="pb-3">Add Brand</h2>
+    <div class="mb-3">
+        <label asp-for="BrandName" class="form-label">Brand Name</label>
+        <input type="text" class="form-control" asp-for="BrandName">
+        <span asp-validation-for="BrandName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label">Description</label>
+        <input type="text" class="form-control" asp-for="Description">
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert alert-success mb-3">
+            @TempData["msg"]
+        </div>
+    }
+
+    <div class="mb-3">
+        <button class="btn btn-primary" type="submit">Add</button>
+        <a class="btn btn-secondary" href="/Brand/GetAllBrands">All Records</a>
+    </div>
+</form>

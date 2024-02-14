@@ -1,0 +1,19 @@
+﻿@model ShoeStoreASP.Models.Domain.Type
+
+    <form class="w-50 mx-auto mt-5 Contentt float-in"  asp-action="UpdateType" method="post">
+        <input type="hidden" asp-for="TypeId" />
+
+        <div class="mb-3">
+            <label class="form-label" asp-for="TypeName">Type Name:</label>
+            <input class="form-control" asp-for="TypeName" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" asp-for="Description">Description:</label>
+            <input class="form-control" asp-for="Description" />
+        </div>
+
+        <button class="btn btn-primary"  type="submit">Save Changes</button>
+    </form>
+
+

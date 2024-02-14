@@ -1,0 +1,12 @@
+﻿@model ShoeStoreASP.Models.ViewModel.ChangeImgVm
+
+    <form class="w-50 mx-auto mt-5 Contentt float-in"  method="post" asp-action="ChangeImg" asp-controller="Shoe" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="imageFile">Select Image:</label>
+            <input type="file" asp-for="formFile" class="form-control" />
+
+            <!-- Hidden field for ShoeId -->
+            <input type="hidden" asp-for="ShoeId" />
+        </div>
+        <input type="submit" value="Upload" class="btn btn-primary" />
+    </form>

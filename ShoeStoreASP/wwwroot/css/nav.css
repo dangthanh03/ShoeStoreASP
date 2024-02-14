@@ -1,0 +1,223 @@
+﻿a {
+    text-decoration: none;
+}
+
+.nav-barr {
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Section {
+    min-height: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-linkk {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+}
+
+    .nav-linkk li {
+        margin: 0 10x;
+    }
+
+    .nav-linkk a {
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .nav-linkk li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+
+    .nav-linkk a.active {
+        background-color: #555;
+    }
+
+    /* Style the first level dropdown */
+    .nav-linkk li:hover {
+        background-color: #555; /* Change background color on hover */
+    }
+
+/* Style the nested dropdown */
+.dropdown-submenu {
+    position: relative;
+}
+
+    .dropdown-submenu a::after {
+        font-size: 0.5em;
+        margin-left: 5px;
+    }
+
+    .dropdown-submenu a:hover {
+    }
+
+/* Style the second level dropdown items */
+.dropdown-nav-linkk {
+    display: none;
+    position: absolute;
+    top: 103%;
+    left: 0;
+    background-color: #333;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Display nested dropdown on hover */
+.dropdown-submenu:hover .dropdown-nav-linkk {
+    display: inline-block;
+}
+
+/* Style the third level dropdown items */
+.dropdown-submenu-nav1,
+.dropdown-submenu-nav2,
+.dropdown-submenu-nav3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #333;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Display second level dropdown1 on hover */
+.dropdown-submenu1:hover .dropdown-submenu-nav1 {
+    display: block;
+}
+
+/* Display second level dropdown2 on hover */
+.dropdown-submenu2:hover .dropdown-submenu-nav2 {
+    display: block;
+}
+
+.dropdown-submenu3:hover .dropdown-submenu-nav3 {
+    display: block;
+}
+
+/* Style the third level dropdown items */
+.dropdown-submenu-nav1 li a,
+.dropdown-submenu-nav2 li a,
+.dropdown-submenu-nav3 li a {
+    color: #fff; /* Change color for dropdown items */
+    padding: 10px;
+    display: block;
+}
+
+    /* Change background color on hover for third level dropdown items */
+    .dropdown-submenu-nav1 li a:hover,
+    .dropdown-submenu-nav2 li a:hover,
+    .dropdown-submenu-nav3 li a:hover {
+        background-color: #555;
+    }
+
+/* Remove list-style-type for li elements */
+.nav-linkk li,
+.dropdown-submenu-nav1 li,
+.dropdown-submenu-nav2 li,
+.dropdown-submenu-nav3 li {
+    list-style-type: none;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
+    .dropdown-submenu a::after {
+        text-decoration: none;
+    }
+
+    .dropdown-nav-linkk,
+    .dropdown-submenu-nav1,
+    .dropdown-submenu-nav2,
+    .dropdown-submenu-nav3 {
+        position: static;
+        display: none;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .dropdown-submenu:hover .dropdown-nav-linkk,
+    .dropdown-submenu1:hover .dropdown-submenu-nav1,
+    .dropdown-submenu2:hover .dropdown-submenu-nav2,
+    .dropdown-submenu3:hover .dropdown-submenu-nav3 {
+        display: block;
+    }
+
+}
+
+.Contentt {
+    height: 100%;
+    margin-top: 70px !important;
+}
+
+/* Define a keyframe animation named 'floatIn' */
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the 'floatIn' animation to the animated element */
+.float-in {
+    animation: floatIn 1s ease-out; /* Adjust the duration and timing function as needed */
+}
+.custom-thumbnail {
+    width: 150px; /* Độ rộng mong muốn */
+    height: auto; /* Giữ tỷ lệ khung hình */
+}
+.pagination {
+    position: relative;
+    bottom: 20px;
+    right: 40px;
+    display: flex;
+    justify-content: right;
+}
+
+    .pagination a {
+        color: black;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+    }
+
+        /* Style the active/current link */
+        .pagination a.active {
+            background-color: rgb(169, 30, 255);
+            color: white;
+        }
+
+        /* Add a grey background color on mouse-over */
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+
+
+.footerr {
+    margin-top: 40px;
+    color: white !important;
+    background-color: black !important;
+    padding: 20px;
+}

@@ -1,0 +1,27 @@
+﻿@model ShoeStoreASP.Models.ViewModel.LoginModel
+
+<form class="w-50 mx-auto mt-5 float-in" asp-action="Login" method="post" asp-controller="UserAuthenticate">
+    <h2 class="pb-3">Login</h2>
+    <div class="mb-3">
+        <label asp-for="Username" class="form-label">Username</label>
+        <input type="text" class="form-control" asp-for="Username">
+        <span asp-validation-for="Username" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Password" class="form-label">Password</label>
+        <input type="password" class="form-control" asp-for="Password">
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert alert-danger mb-3">
+            @TempData["msg"]
+        </div>
+    }
+
+    <div class="mb-3">
+        <button class="btn btn-primary" type="submit">Login</button>
+    </div>
+</form>

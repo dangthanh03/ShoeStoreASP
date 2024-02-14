@@ -1,0 +1,44 @@
+﻿@model ShoeStoreASP.Models.ViewModel.AddShoeVM
+
+
+<!-- ... (Các phần khác của view) -->
+<form asp-action="AddShoe" class="w-50 mx-auto mt-5 Contentt float-in"  method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="Name" class="form-label">Name:</label>
+        <input class="form-control"  type="text" id="Name" name="Name" asp-for="Name" required>
+    </div>
+    <div class="mb-3">
+        <label for="BrandId" class="form-label">Brand:</label>
+        <select class="form-control" id="BrandId" name="BrandId" asp-for="BrandId" asp-items="@(new SelectList(Model.Brands, "BrandId", "BrandName"))" required>
+        <option value="">Select Brand</option>
+    </select>
+    </div>
+    <div class="mb-3">
+        <label  class="form-label">Types:</label>
+        <select class="form-control"  asp-for="Types" asp-items="@(new SelectList(Model.AllTypes, "TypeId", "TypeName"))" multiple>
+        <!-- Chọn multiple để người dùng có thể chọn nhiều loại -->
+            <span asp-validation-for="Types" class="text-danger"></span>
+    </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="Price">Price:</label>
+    <input class="form-control" type="number" id="Price" name="Price" asp-for="Price" required>
+    </div>
+    <div class="mb-3">
+    <label class="form-label" for="StockQuantity">Stock Quantity:</label>
+        <input class="form-control"  type="number" id="StockQuantity" name="StockQuantity" asp-for="StockQuantity" required>
+    </div>
+
+    <div class="mb-3">
+    <label class="form-label" for="Description">Description:</label>
+        <textarea class="form-control" id="Description" name="Description" asp-for="Description" required></textarea>
+    </div>
+    <div class="mb-3">
+    <label class="form-label" for="ImageFile">Image:</label>
+        <input class="form-control" type="file" id="ImageFile" name="ImageFile" asp-for="ImageFile">
+    </div>
+    <input type="submit" value="Add Shoe">
+</form>
+
+<!-- ... (Các phần khác của view) -->

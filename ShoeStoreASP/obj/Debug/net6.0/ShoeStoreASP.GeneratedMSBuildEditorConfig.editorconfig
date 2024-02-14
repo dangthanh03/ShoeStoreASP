@@ -1,0 +1,119 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ShoeStoreASP
+build_property.RootNamespace = ShoeStoreASP
+build_property.ProjectDir = D:\MVC\First\ShoeStoreASP\ShoeStoreASP\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\MVC\First\ShoeStoreASP\ShoeStoreASP
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Brand/AddBrand.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcQWRkQnJhbmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Brand/EditBrand.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcRWRpdEJyYW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Brand/GetAllBrands.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcR2V0QWxsQnJhbmRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Cart/AddToCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxBZGRUb0NhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Home/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Invoice/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZVxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Invoice/GetAllInvoice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZVxHZXRBbGxJbnZvaWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Shoe/AddShoe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvZVxBZGRTaG9lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Shoe/ChangeImg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvZVxDaGFuZ2VJbWcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Shoe/EditShoe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvZVxFZGl0U2hvZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Shoe/GetAllShoes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvZVxHZXRBbGxTaG9lcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Shoe/ProductDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvZVxQcm9kdWN0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Type/AddType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHlwZVxBZGRUeXBlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Type/EditType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHlwZVxFZGl0VHlwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Type/GetAllType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHlwZVxHZXRBbGxUeXBlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/UserAuthenticate/ChangePass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckF1dGhlbnRpY2F0ZVxDaGFuZ2VQYXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/UserAuthenticate/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckF1dGhlbnRpY2F0ZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/UserAuthenticate/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckF1dGhlbnRpY2F0ZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/First/ShoeStoreASP/ShoeStoreASP/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-x07j4lewtu
